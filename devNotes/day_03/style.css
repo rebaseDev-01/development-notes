@@ -1,0 +1,32 @@
+.parent{
+  border: 2px solid black;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+.child{
+  height: 5rem;
+  width: 5rem;
+  background-color: blue;
+}
+
+.a{
+  height: 20rem;
+  border: 2px solid black;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+}
+
+.b{
+  height: 5rem;
+  width: 5rem;
+  background: red;
+  /* margin-top: 7rem;
+  margin-left: 45%; */
+  position: absolute;
+  top:40%;
+  left: 45%;
+}
