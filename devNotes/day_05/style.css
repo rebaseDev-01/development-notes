@@ -1,0 +1,34 @@
+/* .a{
+  background-color: red;
+  height: 100vh;
+}
+
+@media (min-width: 600px) {
+  .a{
+    background-color: blue;
+  }
+} */
+
+.a{
+  background-color: blue;
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.b{
+  height: 5rem;
+  width: 5rem;
+  background: yellow;
+}
+
+@media  (max-width: 450px) {
+  .a{
+    flex-direction: column;
+    width: fit-content;
+  }
+}
+
+/* if you are writing a simple css i.e without any break point that means it is always implemented;
+if you are definig any breakpoint then the css of that particular part gets activated and 
+ovverride the respective property of that element. */
