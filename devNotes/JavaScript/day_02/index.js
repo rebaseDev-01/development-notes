@@ -68,8 +68,8 @@
 
 // console.log(a)
 // Array = is a contigious memory location storing element of same data type
-const arr = [1, 2, 3, 4, 5, 6, "string", true, false, [1, 2, true], { name: "hey", age: 10 }] // list
-const arr1 = [1, 2]
+// const arr = [1, 2, 3, 4, 5, 6, "string", true, false, [1, 2, true], { name: "hey", age: 10 }] // list
+// const arr1 = [1, 2]
 // const res = arr.concat(arr1);
 // console.log(res)
 
@@ -85,6 +85,153 @@ const arr1 = [1, 2]
 //   };
 // }
 // arr.map(it => typeof it === "number" ? console.log(it) : "")
-console.log(arr.indexOf(6))
+//forEach, - array
+// forOf- object
+//iterator//
 
-auto 
+const user = {
+  name: "JOHN",
+  age: 22,
+  sal: 50
+}
+
+// for (let element of Object.keys(user)) {
+//   console.log(element)
+// }
+
+// Map: to print the values of an object
+
+const arr = [1, 2, 3];
+
+// arr.forEach(it=>console.log(it))
+const users = [
+  {
+    id: 1,
+    name: "JOHN",
+    age: 22,
+    sal: 20,
+    city: "INDORE"
+  },
+  {
+    id: 2,
+    name: "HENA",
+    age: 22,
+    sal: 50,
+    city: "BLR"
+  },
+  {
+    id: 3,
+    name: "MAN",
+    age: 22, city: "DELHI",
+    sal: 70
+  },
+  {
+    id: 3,
+    name: "MAN",
+    age: 22,
+    city: "MUMBAI",
+    sal: 70
+  }, {
+    id: 3,
+    name: "MAN",
+    age: 22,
+    sal: 70,
+    city: "DELHI"
+  },
+]
+
+// users.map(user => console.log(user.name + "->" + user.sal))
+
+// const isSalaryDecent = (emp) => {
+//   return emp.sal > 50 ? console.log(emp.name + "->" + emp.sal) : "";
+// }
+
+// users.map(u => isSalaryDecent(u));
+const obj = [{
+  id: 1,
+  name: "JOHN",
+  age: 22,
+  sal: 20
+}]
+
+// for (let u in obj) {
+//   console.log(obj[u])
+// }
+
+// obj.map(it => console.log(it.name))
+// destructure
+
+// for (let [key, value] of Object.entries(obj)) {
+//   console.log(key + "->" + value)
+// }
+
+const numberArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 6, 1, 5631, 3644, 1, 6541, 1, 11, 164, 13, 184, 174, 1354, 11, 46, 1564];
+// 1 - loop
+// const res = [];
+
+// for (let i = 0; i < numberArr.length; i++) {
+//   if (numberArr[i] % 2 == 0) {
+//     res.push(numberArr[i]);
+//   }
+// }
+
+// const res = numberArr.map(it => it % 2 == 0)
+
+// numberArr.forEach(it => it % 2 == 0 ? console.log(it) : "")
+
+// console.log(res);
+
+// const res = numberArr.map(it => it % 2 === 0)
+
+// const res = numberArr.filter(it => it % 2 === 0);
+
+// console.log(res)
+
+// every- for all Element
+// some- for any elemnt
+// /boolean
+// console.log(numberArr.slice(0, 10))
+// reduce - used to combine one or more value
+
+// console.log(numberArr.reduce((acc, curr) => acc + curr, 0))
+
+// use case -  used for grouping element
+
+
+// full stack developement - SQL, js / ts
+// const users = [
+//   20: { {
+//     id: 1,
+//     name: "JOHN",
+//     age: 22,
+//     sal: 20
+//   },}, {
+//   id: 2,
+//     name: "HENA",
+//       age: 22,
+//         sal: 20
+// },
+// 70: {
+//   id: 3,
+//     name: "MAN",
+//       age: 22,
+//         sal: 70
+// },
+// ]
+
+// select * from emp grouped by city- SQL
+
+const grouped = users.reduce((acc, curr) => {
+  const cityG = curr.city;
+  if (!acc[cityG]) {
+    acc[cityG] = []
+  };
+  acc[cityG].push(curr)
+  return acc;
+}, {})
+
+// 11LPA
+
+console.log(grouped)
+
+numberArr.
