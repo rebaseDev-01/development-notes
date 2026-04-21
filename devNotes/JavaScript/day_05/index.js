@@ -46,11 +46,18 @@
 //   })
 // }
 
+//promise chaining-- multiple promises
 // funcOne()
 //   .then(funcTwo)
 //   .then(funcThree)
 //   .then((res) => console.log(res))
 //   .catch((err) => console.log(err))
+
+// async myFunctions(){
+//   await funcOne()
+//   await funcTwo();
+//   await funcThree();
+// }
 
 // every thing should be true
 // Promise.all([
@@ -59,6 +66,8 @@
 //   Promise.resolve("C")
 // ]).then((res) => console.log("Resolved"))
 //   .catch(err => console.log("Error"))
+
+// java / .NET -- (async)-- Task.all
 
 // anything should be true-> end result true
 // Promise.any([
