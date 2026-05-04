@@ -1,0 +1,11 @@
+.box-light{
+  padding: 1rem;
+  border: 1rem solid red;
+  background: red;
+}
+
+.box-dark{
+  padding: 1rem;
+  border: 1rem solid red;
+  background: white;
+}
